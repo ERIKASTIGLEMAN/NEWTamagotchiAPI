@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace NEWTamagotchiAPI.Models
 {
@@ -7,9 +8,11 @@ namespace NEWTamagotchiAPI.Models
         public int Id { get; set; }
         public string Name { get; set; }
         public DateTime Birthday { get; set; }
-        public string PetName { get; set; }
         public int HungerLevel { get; set; }
         public int HappinessLevel { get; set; }
+        public List<Playtime> Playtimes { get; set; }
+        public List<Scolding> Scoldings { get; set; }
+        public List<Feeding> Feedings { get; set; }
 
     }
 }
