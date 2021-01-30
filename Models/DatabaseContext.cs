@@ -13,7 +13,11 @@ namespace NEWTamagotchiAPI.Models
         // Change this to true if you want to have logging of SQL statements in development
         private static bool LOG_SQL_STATEMENTS_IN_DEVELOPMENT = false;
 
-        // Add database tables here
+
+        public DbSet<Pet> Pets { get; set; }
+        public DbSet<Playtime> Playtimes { get; set; }
+        public DbSet<Feeding> Feedings { get; set; }
+        public DbSet<Scolding> Scoldings { get; set; }
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
