@@ -167,7 +167,7 @@ namespace NEWTamagotchiAPI.Controllers
         }
 
 
-        [HttpPost("{id}/ Playtime")]
+        [HttpPost("{id}/Playtime")]
         public async Task<ActionResult<Playtime>> CreatePlaytimeForPets(int id)
 
         {
@@ -196,7 +196,7 @@ namespace NEWTamagotchiAPI.Controllers
 
 
 
-        [HttpPost("{id} / Feeding")]
+        [HttpPost("{id}/Feeding")]
         public async Task<ActionResult<Playtime>> CreateFeedingForPets(int id)
 
         {
@@ -220,7 +220,7 @@ namespace NEWTamagotchiAPI.Controllers
             return Ok(feeding);
         }
 
-        [HttpPost("{id}/ Scolding")]
+        [HttpPost("{id}/Scolding")]
         public async Task<ActionResult<Playtime>> CreateScoldingForPets(int id)
         {
 
